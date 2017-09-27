@@ -6,7 +6,7 @@
 #wrapper .box .img img {width:70%; height:70%; margin-top:18%; margin-left:15%; border-radius:10px;}
 #wrapper .box:hover .img {transform: rotate(360deg);}
 #wrapper .box h2 {margin-top:25%; text-align:center;}
-#wrapper .box h2 a {text-decoration:none; font-family:Cursive; font-size:18px; display:block; padding-top:1%; padding-bottom:1%; }
+#wrapper .box h2 a {text-decoration:none; font-family: 'Courgette', cursive; font-size:18px; display:block; padding-top:1%; padding-bottom:1%; }
 #wrapper .box p {padding:3%; font-family:Arial; font-size:13px; font-weight:600; text-align:justify;}
 #wrapper .box h2:hover {text-decoration:underline;}
 #content {width:70%; margin:0 auto; //background:#eee; display:flex; flex-wrap:wrap; flex-direction:row; margin-bottom:10px;}
@@ -15,7 +15,7 @@
 #content .news #img img {width:100%; height:100%;}
 /*#content .news:hover {-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75); box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);}*/
 #content .news #post {width:50%; display:flex; flex-wrap:wrap; flex-direction:column; height:300px; //background:red;}
-#content .news #post h1 {text-align:center; color:#8e44ad; font-family:Cursive; font-size:18px; //margin-bottom:10px; margin-top:10px;}
+#content .news #post h1 {text-align:center; color:#8e44ad; font-family: 'Courgette', cursive; font-size:18px; //margin-bottom:10px; margin-top:10px;}
 #content .news #post p {padding:20px; text-align:justify; color:#7f8c8d; font-family:Arial; font-size:14px;}
 #content .news #post a {text-decoration:none; text-align:center;display:block; background:#c2209a; width:30%; margin-left:70%; height:30px; line-height:30px; color:#f6f6f6; border-radius:5px;}
 #content .heading {width:100%; //background:#3498db; height:100px; display:flex; flex-wrap:wrap; flex-direction:column; margin-top:20px;}
@@ -76,6 +76,7 @@
 }
 
 @media only screen and (max-width:650px) {
+	#slider {height:400px;}
 	#slider img {margin-top:50px;}
 	#wrapper  {margin-top:5%;}
 	#wrapper .box .img {height:8%; }
@@ -110,7 +111,11 @@
 	#content .heading {margin-bottom:5%; //background:red;}
 }
 
-@media only screen and (max-width:365px) {
-	#content .heading p {padding-right:2%;}
+@media only screen and (max-width:380px) {
+	#content .heading {//background:red; margin:0; padding:0; width:97%; height:auto;}
+	#content .heading h1 {width:100%; //background:yellow;}
+	#content .heading p {//padding-right:2%; width:100%; //background:orange;}
 	#wrapper .box .img {height:8%; }
+	#content #kollektiv {margin-top:10%;}
+	#content #kollektiv .kollektiv {width:92%;}
 }
