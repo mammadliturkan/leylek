@@ -132,18 +132,18 @@ footer .footer p {font-family:Arial; color:#8e44ad; margin-top:10%;}
 }
 
 @media only screen and (max-width:650px) {
-	header { //background:#eee; height:210px; position:relative; border-bottom:1px solid #8e44ad;}
+	header { //background:#eee; height:210px; position:relative; border-bottom:1px solid #8e44ad; }
 	header .logo {width:23%; height:180px; //background:#e600ac;}
 	header nav{//background:#000; height:auto; width:70%; } 
 	header nav > ul {//background:yellow; display:flex; flex-wrap:wrap; flex-direction:column-reverse; margin-top:-5%; }
 	header nav > ul li {//background:red; height:65px; line-height:65px;}
-	header nav ul li ul {margin-left:15%; position:relative; //width:100%; //display:block;}
+	header nav ul li ul {margin-left:15%; position:relative; //width:100%; //display:block; //background:orange;}
 	header nav > ul li {display:none;}
 	header nav > ul .icon {display:inline-block;}
 	header nav > ul .icon, header nav > ul .c-icon { padding-bottom:5px; //background:red; width:10%; margin-bottom:1%;}
 	/*nav .sub-menu li:not(:nth-child(5)){ display:none;}*/
 	
-	#menu {display:flex; flex-wrap:wrap; flex-direction:row; //background:lightgreen; height:190px;}
+	#menu {/*display:flex; flex-wrap:wrap; flex-direction:row;*/ //background:lightgreen; height:190px;}
 	#menu #lang {width:100%; //background:#1abc9c; height:45px;}
 	#menu #search {width:98%; //background:orange; }
 	#menu #clock {width:43%; //background:#f39c12; margin-bottom:2%; margin-left:2%; margin-top:2%;}
@@ -169,12 +169,12 @@ footer .footer p {font-family:Arial; color:#8e44ad; margin-top:10%;}
 
 @media only screen and (max-width:480px) {
 	header { //background:#eee; height:270px;}
-	nav ul label {display:block;} 
+	nav ul label {//display:block;} 
 	nav > ul {margin-top:5%;}
 	#menu #clock {width:100%; }
 	#menu #clock .img {margin-right:12%;}
 	#menu #phone {width:100%; //background:#3498db; margin-right:1%;}
-	nav ul li ul  {position:relative; margin-left:-15%; width:100%; flex-direction:column;}
+	nav ul li ul  {position:relative; //margin-left:-15%; width:100%; flex-direction:column;}
 	
 	footer .top_foot {width:93%; margin-left:5%;}
 	/*.bottom-foot #left {//background:blue; width:48%; height:auto;}
@@ -192,5 +192,10 @@ footer .footer p {font-family:Arial; color:#8e44ad; margin-top:10%;}
 
 @media only screen and (max-width:380px) {
 	.bottom-foot {padding-bottom:6%; margin-top:2%;}
+}
+
+@media only screen and (max-width:390px) {
+	header nav ul li ul {margin-left:0%; position:relative;}
+	header .logo {margin-left:2%;margin-right:3%;}
 }
 
