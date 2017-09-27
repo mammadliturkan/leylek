@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leylek usaq bagcasi</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+
+<script src="js/jquery-1.11.0.js"></script>
+<script type = "text/javascript">
+	function MenuOpen(){
+		/*var x = document.getElementById("menu-top");
+		if(x.className === "sub-menu"){
+			x.className += "mobil";
+		}else{
+			x.className = "sub-menu";
+		}*/
+		
+		
+		$("header").css("height","630px");
+		
+		$("nav ul li").fadeIn("slow");
+		$("nav ul .c-icon").fadeIn("slow");
+	
+	}
+	
+	function MenuClose(){
+		$("header").css("height","270px");
+		$("nav ul li").hide();
+		$("nav ul .c-icon").hide();
+		$("nav ul .icon").fadeIn();
+	}
+	
+	
+</script>
+<script src="js/main.js"></script>
+</head>
+<style>
+	footer {background-image:url(img/bg-7-3.png); background-size:cover; background-repeat:no-repeat; //background-attachment:fixed;}
+</style>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+		</div>
+		
+		<nav>
+			<div id="menu">
+			
+				<div id="lang">
+					<a href="#"><img src="img/eng.png" alt="" title="" /></a>
+					<a href="#"><img src="img/rus.png" alt="" title="" /></a>
+					<a href="#"><img src="img/azeri.png" alt="" title="" /></a>
+				</div>
+				
+				<div id="search">
+					<form action="" method="post">
+						<input type="search" name="search" placeholder="Axtar" />
+						<button type="submit" name="send"><img src="img/search.png" /></button>
+					</form>
+				</div>
+				
+				<div id="clock">
+					<div class="img"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+					<span>İş saati </span>
+					<span>08:30 / 18:30</span>
+				</div>
+				
+				<div id="phone">
+					<div class="img"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+					<span>(012) 417-05-67</span>
+					<span>(050) 614-04-44</span>
+				</div>
+				
+				
+				<!--<div id="social">
+					<a href="#"><img src="insta.png" alt="" title="" /></a>
+					<a href="#"><img src="face.png" alt="" title="" /></a>
+				</div>-->
+			</div>
+			
+			
+			<ul id="menu-top" class="sub-menu">
+			
+				<li class="c-icon"><a href="javascript:void(0);" onclick="MenuClose()"><img src="img/delete.png" /></a></li>
+				<li><a href="#">Əlaqə</a>
+				<li><a href="#">Qaleriya</a>
+				<li><a href="#">Xidmətlərimiz</a>
+					<ul>
+						<li><a href="#">Peşəkar kollektivimiz</a></li>
+						<li><a href="#">Dərnəklər</a></li>
+						<li><a href="#">Servis</a></li>
+						<li><a href="#">Qidalanma</a></li>
+						<li><a href="#">Gigiyena</a></li>
+						<li><a href="#">Təhlükəsizlik</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Leylək Dünyası </a>
+					<ul>
+						<li><a href="#">Haqqımızda</a></li>
+						<li><a href="#">Dəyərlərimiz və məqsədimiz</a></li>
+						<li><a href="#">Qeydiyyat üçün məlumat</a></li>
+						<li><a href="#">Bağçamız</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Ana səhifə</a></li>
+				
+				<li class="icon"><a href="javascript:void(0);" onclick="MenuOpen()"><img src="img/nav.png" /></a></li>
+				
+			
+			</ul>
+			
+		</nav>
+		
+		<!--<input type="checkbox" id="res-menu">
+			<label for="res-menu"><img src="nav.png" /></label>-->
+	</header>
+	
+	<div id="slider">
+		<img src="img/slider-1.jpg" alt="" title="" />
+	</div>
+	
+	<div id="wrapper">
+		<div class="box" style="background:#ecf0f1;">
+			<div class="img"><img src="img/about2.png" /></div>
+			<h2><a href="#" style="color:#9b59b6;">Haqqımızda</a></h2>
+			<p style="color:#aa71c1;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+		</div>
+		<div class="box" style="background:#d9d9d9;">
+			<div class="img"><img src="img/value3.png" /></div>
+			<h2><a href="#" style="color:#9b59b6;">Dəyərlərimiz və məqsədimiz</a></h2>
+			<p style="color:#aa71c1;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+		</div>
+		<div class="box" style="background:#a05fb9;">
+			<div class="img"><img src="img/registr3.png" /></div>
+			<h2><a href="#" style="color:#fff;">Qeydiyyat üçün məlumat </a></h2>
+			<p style="color:#f4edf7;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+		</div>
+		<div class="box" style="background:#773e8e;">
+			<div class="img"><img src="img/bagca2.png" /></div>
+			<h2><a href="#" style="color:#fff;">Bağçamız</a></h2>
+			<p style="color:#f4edf7;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+		</div>
+	</div>
+	
+	<div id="content">
+		<div class="news">
+			<div id="img"><img src="img/slider-2.jpg" alt="" title="" /></div>
+			<div id="post">
+				<h1>Bawliq</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				<a href="#">Davami</a>
+			</div>
+		</div>
+		
+		<div class="news">
+			<div id="img"><img src="img/slider-1.jpg" alt="" title="" /></div>
+			<div id="post">
+				<h1>Bawliq</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				<a href="#">Davami</a>
+			</div>
+		</div>
+		
+		<div class="heading">
+		<h1>Nə səbəbə görə "Leylək" uşaq bağçası? </h1>
+		<p> dvdsfdshfdsjgfjdsgvdskjgvdjvjdfvbjdfvbfdjvb dvdsfdshfdsjgfjdsgvdskjgvdjvjdfvbjdfvbfdjvb</p>
+		</div>
+		
+		<div id="container">
+			<div class="left_lesson">
+				<h1 style="color:#27ae60;">Peşəkar kollektivimiz </h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+			</div>
+			
+			<div class="left_lesson">
+				<h1 style="color:#2980b9;">Dərnəklər</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+			</div>
+			
+			<div class="left_lesson">
+				<h1 style="color:#e67e22;">Servis</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+			</div>
+			
+			<div id="image">
+				<img src="img/1.png" />
+			</div>
+			
+			<div class="right_lesson">
+				<h1 style="color:#c0392b;">Qidalanma</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+			</div>
+			
+			<div class="right_lesson">
+				<h1 style="color:#8e44ad;">Gigiyena</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+			</div>
+			
+			<div class="right_lesson">
+				<h1 style="color:#2ecc71;">Təhlükəsizlik</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+			</div>
+		</div>
+		
+		<div class="heading">
+			<h1>Peşəkar kollektivimiz  </h1>
+		</div>
+		
+		<div id="kollektiv">
+			<div class="kollektiv">
+				<div class="img">
+					<img src="img/k-1.jpg" />
+				</div>
+				<h4>Dinara Bayramlı</h4>
+				<p>Muhasib</p>
+			</div>
+			
+			<div class="kollektiv">
+				<div class="img">
+					<img src="img/k-1.jpg" />
+				</div>
+				<h4>Türkan Məmmədli</h4>
+				<p>Operator</p>
+			</div>
+			
+			<div class="kollektiv">
+				<div class="img">
+					<img src="img/k-1.jpg" />
+				</div>
+				<h4>Nata Cavadova</h4>
+				<p>Baş muhasib</p>
+			</div>
+			
+			<div class="kollektiv">
+				<div class="img">
+					<img src="img/k-1.jpg" />
+				</div>
+				<h4>Dinara Bayramlı</h4>
+				<p>Muhasib</p>
+			</div>
+			
+			<div class="kollektiv">
+				<div class="img">
+					<img src="img/k-1.jpg" />
+				</div>
+				<h4>Türkan Məmmədli</h4>
+				<p>Operator</p>
+			</div>
+			
+			<div class="kollektiv">
+				<div class="img">
+					<img src="img/k-1.jpg" />
+				</div>
+				<h4>Nata Cavadova</h4>
+				<p>Baş muhasib</p>
+			</div>
+			
+		</div>
+	</div>
+	
+	<footer>
+	<div class="top_foot">
+		<div class="footer">
+			<div class="img"><i class="fa fa-users" aria-hidden="true"></i></div>
+			<h1>100</h1>
+			<h4>Xoşbəxt ailə</h4>
+		</div>
+		
+		<div class="footer">
+			<div class="img"><i class="fa fa-university" aria-hidden="true"></i></div>
+			<h1>5</h1>
+			<h4>Sinif</h4>
+		</div>
+		
+		<div class="footer">
+			<div class="img"><i class="fa fa-car" aria-hidden="true"></i></div>
+			<h1>1</h1>
+			<h4>Servis maşını</h4>
+		</div>
+		
+		<div class="footer">
+			<div class="img"><i class="fa fa-female" aria-hidden="true"></i></div>
+			<h1>6</h1>
+			<h4>Kollektiv</h4>
+		</div>
+		
+		<div class="footer">
+			<div class="img"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+			<p>Topçubaşov küç.11 (Beynəlxalq Bankın arxası)</p>
+			
+		</div>
+		</div>
+	</footer>
+	
+	<div class="bottom-foot">
+		<div class="center" id="">
+			<div id="left">
+				<address>&copy; 2017 - Bütün hüquqlar <b>"IFFA-2010"</b> şirkəti tərəfindən qorunur. </address> <p>Designed by </p><div class="img"><img src="img/tuti_logo_1.png" /></div>
+			</div>
+		
+			<div id="right">
+				<div class="img">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				</div>
+			
+				<div class="img">
+					<a href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
